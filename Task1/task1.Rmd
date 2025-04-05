@@ -33,8 +33,18 @@ knit_hooks$set(output = function(x, options)
 
 ```
 
+
+
+
 ## Load required libraries and datasets
 ```{r 0 Load Libraries, results = 'hide'}
+
+
+
+
+
+
+//UNDERSTANDING 
 #### Load required libraries
 library(data.table)
 library(ggplot2)
@@ -44,6 +54,8 @@ library(readr)
 #### Point the filePath to where you have downloaded the datasets to and
 #### assign the data files to data.tables
 
+
+//UNDERSTANDING 
 transactionData <- read.csv("QVI_transaction_data.csv", header= TRUE)
 customerData <- read.csv("QVI_purchase_behaviour.csv", header= TRUE)
 ```
@@ -58,6 +70,12 @@ data. As we have read in the dataset as a `data.table` object, we can also run
 `head(transactionData)` to look at the first 10 rows.
 Let's check if columns we would expect to be numeric are in numeric form and date
 columns are in date format.
+
+
+
+
+
+
 ```{r Examining transaction data}
 #### Examine transaction data
 str(transactionData)
@@ -65,6 +83,12 @@ str(customerData)
 head(transactionData)
 head(customerData)
 ```
+
+
+
+
+
+
 We can see that the date column is in an integer format. Let's change this to a
 date format.
 ```{r Convert DATE to date format}
@@ -506,6 +530,21 @@ It is indicative of impulse buying behavior.
 
 5. The Category Manager may want to increase the category’s performance by off-locating some Tyrrells and smaller packs of chips in discretionary space near segments
 where young singles and couples frequent more often to increase visibility and impulse behavior
+
+
+
+// code review
+
+
+// code review
+
+
+
+
+
+// code review
+
+
 
 
 
